@@ -9,6 +9,14 @@
   margin: auto;
 }
 
+body{
+  min-height: 100vh;
+}
+
+.item {
+  box-shadow: inset 0 5px 0 hsla(217, 16%, 45%,30%);
+}
+
 @layer components{
   html{
     @apply font-sans

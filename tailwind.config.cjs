@@ -12,28 +12,34 @@ module.exports = {
       "2xl": "1536px",
     },
     extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
       colors: {
         // Primary
-        Scissors_Gradient_from: "hsl(39, 89%, 49%)",
-        Scissors_Gradient_to: "hsl(40, 84%, 53%)",
-        Paper_Gradient_from: "hsl(230, 89%, 62%)",
-        Paper_Gradient_to: "hsl(230, 89%, 65%)",
-        Rock_Gradient_from: "hsl(349, 71%, 52%)",
-        Rock_Gradient_to: "hsl(349, 70%, 56%)",
-        Lizard_Gradient: "hsl(261, 73%, 60%)",
-        Lizard_Gradient: "hsl(261, 72%, 63%)",
-        Cyan_from: "hsl(189, 59%, 53%)",
-        Cyan_to: "hsl(189, 58%, 57%)",
+        scissors_Gradient_from: "hsl(39, 89%, 49%)",
+        scissors_Gradient_to: "hsl(40, 84%, 53%)",
+        scissors_shadow: "#c66b1a",
+        paper_Gradient_from: "hsl(230, 89%, 62%)",
+        paper_Gradient_to: "hsl(230, 89%, 65%)",
+        paper_shadow: "#2543c3",
+        rock_Gradient_from: "hsl(349, 71%, 52%)",
+        rock_Gradient_to: "hsl(349, 70%, 56%)",
+        rock_shadow: "#9e1737",
+        lizard_Gradient: "hsl(261, 73%, 60%)",
+        lizard_Gradient: "hsl(261, 72%, 63%)",
+        cyan_from: "hsl(189, 59%, 53%)",
+        cyan_to: "hsl(189, 58%, 57%)",
 
         // Neutral
 
-        Dark_Text: "hsl(229, 25%, 31%)",
-        Score_Text: "hsl(229, 64%, 46%)",
-        Header_Outline: "hsl(217, 16%, 45%)",
+        dark_Text: "hsl(229, 25%, 31%)",
+        score_Text: "hsl(229, 64%, 46%)",
+        header_Outline: "hsl(217, 16%, 45%)",
 
         // background
-        Radial_Gradient_bg_from: "hsl(214, 47%, 23%)",
-        Radial_Gradient_bg_to: "hsl(237, 49%, 15%)",
+        radial_Gradient_bg_from: "hsl(214, 47%, 23%)",
+        radial_Gradient_bg_to: "hsl(237, 49%, 15%)",
       },
     },
     colors: ({ colors }) => ({
