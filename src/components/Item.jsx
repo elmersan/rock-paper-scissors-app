@@ -6,8 +6,8 @@ export const Item = ({
   gradiantFrom,
   gradiantTo,
   shadow,
-  index,
-  handleCLick
+  index=0,
+  handleClick=null
 }) => {
   return (
     <div
@@ -22,7 +22,13 @@ export const Item = ({
         ${shadow}
       `}
       style={index === 2 ? { gridColumn: "span 2" } : {}}
-      onClick={handleCLick}
+      onClick={handleClick && (()=>handleClick({
+        name,
+        gradiantFrom,
+        gradiantTo,
+        shadow,
+        alt,
+      }))}
     >
       <div className="w-[100px] h-[100px] item flex flex-col justify-center items-center rounded-full p-8 bg-white">
         <img

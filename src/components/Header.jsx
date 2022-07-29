@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Header = () => {
+export const Header = ({score}) => {
   return (
     <header className='px-2 py-8'>
       <div className='wrapper'>
@@ -12,7 +12,7 @@ export const Header = () => {
           </h1>
           <div className='text-center bg-white text-dark_Text rounded px-6 py-1'>
             <span className='font-bold text-[10px] tracking-widest'>SCORE</span>
-            <h2 className='text-4xl font-bold'>12</h2>
+            <h2 className='text-4xl font-bold'>{score}</h2>
           </div>
         </div>
       </div>
